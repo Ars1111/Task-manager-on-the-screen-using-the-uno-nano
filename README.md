@@ -1,4 +1,3 @@
-# Task-manager-on-the-screen-using-the-uno-nano
 # System Monitor for Arduino
 
 This project provides a simple system monitoring tool that collects CPU, RAM, and disk usage statistics from a computer and sends this data to an Arduino via a serial connection. It uses the psutil library to gather system metrics and interacts with the Arduino to display or process this information.
