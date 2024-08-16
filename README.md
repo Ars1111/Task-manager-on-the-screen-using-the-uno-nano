@@ -1,6 +1,7 @@
 # System Monitor for Arduino
 
 This project provides a simple system monitoring tool that collects CPU, RAM, and disk usage statistics from a computer and sends this data to an Arduino via a serial connection. It uses the psutil library to gather system metrics and interacts with the Arduino to display or process this information.
+![photo_2024-08-17_02-48-21](https://github.com/user-attachments/assets/7905ac4b-08c6-4070-b46d-2d3e22b6e058)
 
 ## Features
 
@@ -62,7 +63,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 void setup() {
   Serial.begin(9600); // Initialize serial connection
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Initialize display
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); /![photo_2024-08-17_02-47-32](https://github.com/user-attachments/assets/583044f4-31a0-43e1-a691-05765af8d754)
+/ Initialize display
   display.clearDisplay(); // Clear the display
 }
 
@@ -100,6 +102,7 @@ This code initializes the serial connection and the SSD1306 display. It waits fo
 
 Run the Python script to start collecting and sending system metrics to Arduino:
 python monitor.py
+![photo_2024-08-17_02-47-32](https://github.com/user-attachments/assets/b121e719-e616-462e-a49c-17440a155495)
 
 
 The Arduino will receive and process the data, allowing you to visualize system performance in real time on both the serial monitor and the SSD1306 display.
