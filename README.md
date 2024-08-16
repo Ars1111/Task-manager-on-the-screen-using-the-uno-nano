@@ -24,15 +24,15 @@ This project provides a simple system monitoring tool that collects CPU, RAM, an
 ## Installation
 
 1. Clone the repository:
-   
+   ```bash
    git clone https://github.com/yourusername/system-monitor-for-arduino.git
    cd system-monitor-for-arduino
-   
+   ```
 
 2. Install the required Python library:
-   
+   ```py
    pip install psutil
-   
+   ```
 
 3. Open the Arduino IDE, copy the provided Arduino code, and paste it into a new sketch.
 
